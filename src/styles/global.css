@@ -1,0 +1,96 @@
+:root {
+  --color-main: #D32F2F;
+  /* Vivid Red */
+  --color-main-dark: #B71C1C;
+  --color-base: #FFFFFF;
+  /* White */
+  --color-text: #333333;
+  /* Dark Grey for text */
+  --color-gray-light: #F5F5F5;
+  --color-gray-border: #E0E0E0;
+  --color-accent: #FFEBEE;
+  /* Light Red for backgrounds/hover */
+
+  --font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  --spacing-unit: 8px;
+  --header-height: 60px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-gray-light);
+  color: var(--color-text);
+  line-height: 1.6;
+  font-size: 16px;
+  /* Larger base font size for readability */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+.container {
+  max-width: 1280px;
+  /* Increased from 1200px */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading-primary {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-main);
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--color-main);
+  padding-bottom: 10px;
+}
+
+.heading-secondary {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-left: 5px solid var(--color-main);
+  padding-left: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--color-main);
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--color-main-dark);
+}
+
+.hidden-mobile {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
