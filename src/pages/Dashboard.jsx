@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { newsData } from '../data/mockData';
 import Layout from '../components/Layout/Layout';
 
@@ -30,12 +31,12 @@ const Dashboard = () => {
                                 { title: 'シェアオフィス甲州', path: '/koshu', color: '#3949AB' },
                                 { title: 'べいまっくす', path: '/baymax', color: '#1E88E5' },
                             ].map((item) => (
-                                <a key={item.path} href={item.path} className="nav-card" style={{ '--card-color': item.color }}>
+                                <Link key={item.path} to={item.path} className="nav-card" style={{ '--card-color': item.color }}>
                                     <div className="nav-card-content">
                                         <h3 className="nav-card-title">{item.title}</h3>
                                         <span className="nav-card-arrow">→</span>
                                     </div>
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     </div>
