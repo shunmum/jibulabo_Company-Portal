@@ -12,8 +12,10 @@
   /* Light Red for backgrounds/hover */
 
   --font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  --spacing-unit: 8px;
-  --header-height: 60px;
+  --spacing-unit: 10px;
+  /* Increased from 8px */
+  --header-height: 80px;
+  /* Increased from 60px */
 }
 
 * {
@@ -27,8 +29,8 @@ body {
   background-color: var(--color-gray-light);
   color: var(--color-text);
   line-height: 1.6;
-  font-size: 16px;
-  /* Larger base font size for readability */
+  font-size: 20px;
+  /* Increased base font size for 1920x1080 readability */
 }
 
 a {
@@ -42,10 +44,12 @@ ul {
 
 /* Utilities */
 .container {
-  max-width: 95%;
-  /* Responsive width to fill screen and reduce side whitespace */
+  width: 100%;
+  max-width: 1800px;
+  /* Optimized for 1920px screens with margins */
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
+  /* Increased padding */
 }
 
 .text-center {
@@ -53,12 +57,13 @@ ul {
 }
 
 .heading-primary {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  /* Increased from 2rem */
   font-weight: bold;
   color: var(--color-main);
-  margin-bottom: 20px;
-  border-bottom: 2px solid var(--color-main);
-  padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid var(--color-main);
+  padding-bottom: 15px;
 }
 
 .heading-secondary {
