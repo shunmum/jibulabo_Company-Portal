@@ -5,6 +5,7 @@ import ServiceGuide from './pages/ServiceGuide';
 import PriceList from './pages/PriceList';
 import Manual from './pages/Manual';
 import GenericPage from './pages/GenericPage';
+import Koshu from './pages/Koshu';
 
 // Placeholder for Contact page
 const Contact = () => {
@@ -33,7 +34,7 @@ function App() {
         <Route path="/community" element={<GenericPage />} />
         <Route path="/crosby" element={<GenericPage />} />
         <Route path="/nohako" element={<GenericPage />} />
-        <Route path="/koshu" element={<GenericPage />} />
+        <Route path="/koshu" element={<Koshu />} />
         <Route path="/baymax" element={<GenericPage />} />
       </Routes>
     </BrowserRouter>
