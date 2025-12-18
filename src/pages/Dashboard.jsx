@@ -18,6 +18,29 @@ const Dashboard = () => {
                     </div>
                 </section>
 
+                {/* Navigation Grid (Container Query) */}
+                <section style={styles.navGridSection}>
+                    <div className="nav-container-wrapper">
+                        <div className="nav-grid">
+                            {[
+                                { title: '会社について', path: '/company', color: '#E53935' },
+                                { title: 'ジブラボコミュニティー', path: '/community', color: '#D81B60' },
+                                { title: 'CROSS BE', path: '/crosby', color: '#8E24AA' },
+                                { title: 'ノハコ', path: '/nohako', color: '#5E35B1' },
+                                { title: 'シェアオフィス甲州', path: '/koshu', color: '#3949AB' },
+                                { title: 'べいまっくす', path: '/baymax', color: '#1E88E5' },
+                            ].map((item) => (
+                                <a key={item.path} href={item.path} className="nav-card" style={{ '--card-color': item.color }}>
+                                    <div className="nav-card-content">
+                                        <h3 className="nav-card-title">{item.title}</h3>
+                                        <span className="nav-card-arrow">→</span>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
                 {/* News Section */}
                 <section style={styles.newsSection}>
                     <h2 style={styles.sectionTitle}>最新のお知らせ</h2>

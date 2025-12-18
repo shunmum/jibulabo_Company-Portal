@@ -4,6 +4,7 @@ import Dashboard from './pages/Dashboard';
 import ServiceGuide from './pages/ServiceGuide';
 import PriceList from './pages/PriceList';
 import Manual from './pages/Manual';
+import GenericPage from './pages/GenericPage';
 
 // Placeholder for Contact page
 const Contact = () => {
@@ -26,6 +27,14 @@ function App() {
         <Route path="/price" element={<PriceList />} />
         <Route path="/manual" element={<Manual />} />
         <Route path="/contact" element={<Contact />} />
+
+        {/* Virtual Pages */}
+        <Route path="/company" element={<GenericPage />} />
+        <Route path="/community" element={<GenericPage />} />
+        <Route path="/crosby" element={<GenericPage />} />
+        <Route path="/nohako" element={<GenericPage />} />
+        <Route path="/koshu" element={<GenericPage />} />
+        <Route path="/baymax" element={<GenericPage />} />
       </Routes>
     </BrowserRouter>
   );
