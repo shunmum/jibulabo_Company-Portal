@@ -32,7 +32,21 @@ const Koshu = () => {
                     </div>
                 </section>
 
-                {/* 3. Price List */}
+                {/* 3. Facility Gallery */}
+                <section style={styles.section}>
+                    <h3 className="heading-secondary">館内ギャラリー</h3>
+                    <div style={styles.galleryGrid}>
+                        {[1, 2, 3, 4].map((item) => (
+                            <div key={item} style={styles.galleryItem}>
+                                <div style={styles.galleryPlaceholder}>
+                                    <span style={{ fontSize: '2rem', color: '#ccc' }}>Photo {item}</span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                {/* 4. Price List (Renumbered) */}
                 <section style={styles.section}>
                     <h3 className="heading-secondary">料金プラン</h3>
                     <div style={styles.tableWrapper}>
@@ -222,6 +236,25 @@ const styles = {
     staffNoteText: {
         fontWeight: 'bold',
         color: '#3E2723',
+    },
+    galleryGrid: {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+        gap: '20px',
+    },
+    galleryItem: {
+        borderRadius: '8px',
+        overflow: 'hidden',
+        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+        backgroundColor: '#f0f0f0',
+    },
+    galleryPlaceholder: {
+        width: '100%',
+        height: '200px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#e0e0e0',
     },
 };
 
