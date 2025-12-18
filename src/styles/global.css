@@ -42,8 +42,8 @@ ul {
 
 /* Utilities */
 .container {
-  max-width: 1280px;
-  /* Increased from 1200px */
+  max-width: 95%;
+  /* Responsive width to fill screen and reduce side whitespace */
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -94,6 +94,7 @@ ul {
     display: none;
   }
 }
+
 /* Navigation Grid with Container Queries */
 .nav-container-wrapper {
   container-type: inline-size;
@@ -152,10 +153,10 @@ ul {
 /* Container Query Styles */
 @container nav-wrapper (width > 600px) {
   .nav-grid {
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
-  
+
   .nav-card {
     padding: 30px;
     min-height: 160px;
