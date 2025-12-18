@@ -239,18 +239,18 @@ const styles = {
     },
     galleryGrid: {
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-        gap: '20px',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', // Larger photos for big screen
+        gap: '30px',
     },
     galleryItem: {
-        borderRadius: '8px',
+        borderRadius: '12px',
         overflow: 'hidden',
-        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+        boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
         backgroundColor: '#f0f0f0',
     },
     galleryPlaceholder: {
         width: '100%',
-        height: '200px',
+        height: '300px', // Taller placeholder
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

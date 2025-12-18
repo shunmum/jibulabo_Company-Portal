@@ -169,12 +169,22 @@ ul {
 
 @container nav-wrapper (width > 1000px) {
   .nav-grid {
-    /* Maintain 3 columns but maybe adjust spacing/size if needed, 
-       or go to 6 columns if they fit? 6 is tight. 3x2 is good. */
-    gap: 40px;
+    gap: 50px;
+    /* More breathing room */
+  }
+
+  .nav-card {
+    padding: 40px;
+    min-height: 200px;
+    /* Taller cards */
   }
 
   .nav-card-title {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    /* Larger title */
+  }
+
+  .nav-card-arrow {
+    font-size: 2rem;
   }
 }

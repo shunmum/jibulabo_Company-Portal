@@ -64,7 +64,7 @@ const Dashboard = () => {
 
 const styles = {
     missionSection: {
-        marginBottom: '60px',
+        marginBottom: '80px',
         textAlign: 'center',
     },
     sectionTitle: {
@@ -82,9 +82,9 @@ const styles = {
         boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
     },
     missionMain: {
-        fontSize: '2.5rem',
+        fontSize: '3.5rem', // Significantly larger for Full HD
         fontWeight: 'bold',
-        marginBottom: '20px',
+        marginBottom: '30px',
         color: 'var(--color-main-dark)',
     },
     missionSub: {
